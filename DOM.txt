@@ -1,0 +1,62 @@
+<-- Get element methods -->
+
+document.getElementById('')                                             lấy element qua ID
+
+document.getElementsByClassName('')                                     lấy element qua ClassName có dạng giống Array 
+
+document.querySelector('')                                              lấy element qua cách gọi CSS Selector
+
+document.querySelectorAll('')                                           lấy tất cả element qua cách gọi CSS Selector có dạng giống Array 
+
+<-- DOM attribute -->
+
+muốn tương tác với attribute thì phải get được element
+
+< Thêm attribute >
+
+cách 1: đối với các thẻ có các attribute có sẵn
+element.title = 'heading'
+element.id = 'heading'
+element.className = 'heading'
+
+cách 2: đối với các thẻ không có attribute không có sách
+element.setAttribute('tên attribute', 'attribute muốn thêm vào')
+VD: element.setAttribute('a', 'heading')
+
+< lấy attribute >
+
+element.getAttribute('tên attribute')
+
+<-- InnerText vs textContent Property -->
+
+element.innerText  = 'heading'
+                                                                        sửa đoạn text của element
+element.textContent = 'heading'
+
+
+<-- InnerHTML vs OuterHTML Property -->
+
+element.innerHTML = '<h1>Heading</>'
+
+<-- DOM CSS -->
+
+element.style.backgroundColor: 'green'
+
+cách để viết nhanh:
+Object.assign(element.style, {
+    width: '200px',
+    height: '100px',
+    backgroundColor: 'green'
+})
+
+<-- ClassList Property -->
+
+element.ClassList.add('')                                                       thêm className vào element
+
+element.ClassList.remove('')                                                    xóa className của element
+
+element.ClassList.replace('remove', 'add')                                      thêm và xóa className
+
+element.ClassList.toggle('')                                                    nếu chưa có className thì thêm vào còn có rồi thì xóa
+
+element.className.contains('')                                                  kiểm tra xem có className hay không

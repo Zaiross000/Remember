@@ -1,0 +1,56 @@
+doccument.ready(function() {
+    // JQuery Selector
+    $(#id)                                                  chọn tất cả các element có id
+    $(.className)                                           chọn tất cả các element có className
+    
+
+    // EVENT JQuery
+    .click(function() {})                                   sự kiện click
+
+    .dblclick(function() {})                                sự kiện dblclick
+
+    .mouseenter(function() {})                              sự kiện mouseenter
+    
+    .mouseleave(function() {})                              sự kiện mouseleave
+
+    .keydown(function() {})                                 sự kiện keydown
+
+    .keyup(function() {})                                   sự kiện keyup
+
+    .keypress(function() {})                                sự kiện keypress
+
+    .focus(function() {})                                   sự kiện focus
+
+    .blur(function() {})                                    sự kiện blur
+
+    .on({                                                   dùng để thêm nhiều sự kiện cho element
+        mouseenter: function() {},
+        mouseleave: function() {},
+        click: function() {}
+    })
+
+
+    // jQuery Effects
+    .hide(mili Secconds)                                    ẩn element
+    .show(mili Secconds)                                    hiện element
+    .toggle(mili Secconds)                                               ẩn/hiện element
+
+    // jQuery HTML
+    .text(value)                                            lấy text của element và thay thế bằng value         
+    .html(value)                                            giống như innerHTML thay thế bằng value    
+    .val(value)                                             lấy value của input thay thế bằng value    
+    .remove()                                               xóa đi element được chọn
+    .empty()                                                ẩn đi các phần tử con trong phần tử cha
+    .addClass(value)                                        thêm class là value     
+    removeClass(value)                                      xóa class là value 
+    toggleClass(value)                                      thêm/ xóa class là value
+
+    .css({'background-color': 'red', 'color': 'black'})         thêm css
+    .width(value)                                           set width cho element     
+    .height(value)                                          set height cho element     
+    .outterWidth()                                          trả về width của element(bao gồm padding và border)
+    .outterHeight()                                         trả về width của element(bao gồm padding và border)
+
+    // JQuery class
+    
+})

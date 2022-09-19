@@ -1,0 +1,83 @@
+setTimeOut(callback, timer)             Hàm tạo độ trễ
+                                        Thực thi callback 1 lần duy nhất khi kết thúc đếm ngược timer
+
+setInterval(callback, timer)            Hàm tạo độ trễ
+                                        Thực thi callback mỗi khi kết thúc đếm ngược timer
+
+clearTimeout(timeout)                   hủy setTimeOut có tham chiếu được chọn
+clearInterval(interval)                 hủy setInterval có tham chiếu được chọn
+
+promise             Lời hứa sẽ trả về kết quả bất kể thành công hay thất bại
+
+đồng bộ             code chạy theo trình tự thông thường (từ trên xuống dưới)
+
+bất đồng bộ         code không chạy theo trình tự thông thường
+======================================
+
+CallStack                       Biên dịch code và thực thi code
+                                Chỉ thực thỉ 1 câu lệnh tại 1 thời điểm
+
+                                Ưu tiên chạy code trước rồi mới đến hàng chờ
+
+WebAPI / NodeAPI                Người liên lạc giữa client và server
+                                gửi request từ client => server
+                                gửi response từ server => client
+
+CallBack Queue                  hàng chờ
+                                các response nhận về được xếp trong hàng chờ
+                                xếp hàng theo quy tắc nhập trước => xuất trước
+
+
+Event loop                      đẩy hàng chờ (CallBack Queue) lần lượt lên CallStack
+                                chỉ khi hết code và CallStack rỗng thì Event loop đẩy hàng chờ lên
+
+=============================================================
+
+new Promise ( function ( res, rej ) {           
+    // logic
+} )
+
+new Promise             để tạo promise
+res                     kết quả muốn trả về khi thành công
+rej                     kết quả muốn trả về khi thất bại
+
+.then(function (data){  để nhận kết quả trả về của promise nếu thành công
+    //...               trả về Promise mới
+})                      cứ chỗ nào có promise thì dùng then catch xử lý
+
+.catch(function (eror){ để nhận kết quả trả về của promise nếu thất bại
+    //...               trả về Promise mới
+})                      cứ chỗ nào có promise thì dùng then catch xử lý
+=======================================================================================
+
+Promise.all([p1, p2, ...])
+
+Promise.all             xử lý đồng thời các promise trong array đầu vào 
+                        trả về thành công nếu tất cả promise thành công
+                        trả về thành công nếu bất kỳ promise nào thất bại
+
+=============================================================
+
+muốn chạy promise theo thứ tự thì nối chuỗi then, catch
+
+promise1.then(function(data1){
+    if(data1){
+        console.log(22);
+        return promise2
+    }else{
+        return 'end'
+    } 
+})
+.then(function(data){
+    console.log(35, data);
+    return new Promise(function(res, rej){
+        rej('sai 35')
+    })
+})
+.then(function(data){
+    console.log(40, data);
+})
+.catch(function(err){
+    console.log(36, err);
+    return 5555
+})

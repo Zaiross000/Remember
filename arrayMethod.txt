@@ -1,0 +1,59 @@
+Array Method
+
+
+push(item)     =      array[array.length]                   Thêm phần tử vào cuối mảng
+
+unshift(item)                                               Thêm phần tử vào đầu mảng
+
+pop()                                                       Xóa phần tử ở cuối mảng
+
+shift()                                                     Xóa phần tử ở đầu mảng
+
+array1.concat(array2)                                       Nối 2 array
+
+delete                                                      Xóa phần tử bất kỳ trong mảng. Nhưng độ dài không thay đổi.
+
+splice(tham số 1, tham số 2, tham số 3)                     Cắt phần tử trong array. Thay đổi mảng ban đầu
+                                                            Tham số 1: Cắt từ phần tử bao nhiêu
+                                                            Tham số 2: Cắt bao nhêu phần tử bắt đầu từ tham số 1
+                                                                    Nếu để là 0 thì không số phần tử nào
+                                                            Tham số 3: Thêm phần tử bắt đầu từ tham số 1
+
+
+slice(start, end)                                            Cắt các phần tử trong array. Không thay đổi mảng ban đầu
+                                                            start: Vị trí bắt đầu Cắt
+                                                            end: Cắt tới vị trí end - 1
+                                        
+toString()                                                   Đưa một array về một chuỗi
+
+
+sort(function(a,b){                                         Đưa các phân tử trong array về chuỗi và sắp xếp
+                                                            Sắp xếp các phần tử số trong mảng
+    return a - b
+}
+
+map()                                                       trả về một mảng mới và không thay đổi mảng gốc
+                                                            Thay đổi tất cả các phần tử trong Array
+
+
+filter()                                                    Lọc các phần tử trong Array khi đúng điều kiện
+                                                            true: trả về tất cả phần tử vượt qua điều kiến
+                                                            False: không trả về
+
+
+find()                                                      Lọc ra phần tử đầu tiên đúng điều kiện
+                                                            true: thoát khỏi vòng lặp( không kiểm tra phần tử tiếp theo)
+                                                            False: không trả về 
+
+                                                          
+=====================================================================================================================================
+String Method
+
+slice(start, end)                                           Tương tự như slice của array Method
+
+substring(start, end)                                       Tương tự slice
+                                                            Nếu tham số là âm thì sẽ hiểu là bằng 0
+
+toUpperCase()                                               Viết hoa tất cả các ký tự trong string
+toLowerCase()                                               Viết thường tất cả các ký tự trong string
+

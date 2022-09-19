@@ -1,0 +1,51 @@
+length                      lấy độ dài string
+
+indexOf(value, index)       value:  giá trị tìm kiếm
+                            index:  vị trí bắt đầu tìm
+                            trả về vị trí ký tự đầu tiên thỏa mãn
+
+lastIndexOf(value, index)   value:  giá trị tìm kiếm
+                            index:  vị trí bắt đầu tìm
+                            tìm kiếm từ cuối về đầu
+                            trả về vị trí ký tự cuối cùng thỏa mãn   
+
+includes(value, index)      value:  giá trị tìm kiếm
+                            index:  vị trí bắt đầu tìm     
+                            kiểm tra sự tồn tại của ký tự từ vị trí index trở đi
+                            true:   nếu có
+                            false:  nếu không có                                     
+
+slice(start, stop)          copy string từ start => stop       
+
+string[i]                   truy vấn ký tự thứ i
+
+=========================================================================================
+
+trim                            tạo ra string mới loại bỏ khoảng trống thừa đầu và cuối
+                                không ảnh hưởng string gốc
+
+replace(oldString, newString)   tạo ra string mới trong đó oldString được thay thế bởi newString
+                                không ảnh hưởng string gốc
+
+regex
+// g global                                 phạm vi toàn cục
+// i Case insensitivity                     không phân biệt chữ hoa thường
+replace(/Indonesia/g, 'Thái Lan');          Thay thế toàn bộ Indonesia thành Thái Lan
+replace(/Indonesia/gi, 'Thái Lan');         Thay thế toàn bộ Indonesia thành Thái Lan không phân biệt chữ hoa, chư thường
+
+toUpperCase()                   viết hoa toàn bộ 
+
+toLowerCase()                   viết thường toàn bộ
+
+toLocaleString()                từ 10000000 tạo ra string dạng 10,000,000
+
+split(x)                        tạo ra array từ string gốc
+                                các phần tử được cắt theo ký tự x
+
+startsWith(value)               kiểm tra value có khớp với ký tự đầu của string hay không
+                                true    khớp
+                                false   không khớp    
+
+endsWith(value)                 kiểm tra value có khớp với ký tự cuối của string hay không
+                                true    khớp
+                                false   không khớp

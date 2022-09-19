@@ -1,0 +1,10 @@
+display: grid
+                                Chưa có gì xảy ra
+
+grid-template-columns:   
+                                Chia số cột 
+
+gap: row-gap columns-gap
+                                khoảng cách giữa hàng và cột
+                                
+                                                              

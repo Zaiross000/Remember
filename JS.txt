@@ -1,0 +1,67 @@
+console.log(321)                in nội dung lên terminal
+
+node fileName                   chạy file JS
+                                lưu ý chạy đúng đường dẫn
+
+================================================================
+var ten                         khai biến trong JS
+                                biến được khai báo mặc định là undifined   
+                                tên biến viết liền
+
+ten = value                     gán giá trị cho biến                               
+
+==================================================================
+string
+
+var string = 'ten...'           khai báo string thì bọc trong '' ""
+                                khai báo string nhiều ròng dùng ``
+
+${data}                         chèn biến vào string
+                                chỉ dùng được với ``
+
+===========================================================================
+object
+
+{                               object cú pháp tương tự css
+    key1: value1,               data đi theo cặp key: value
+    key2: value2,               các data ngăn cách nhau bởi ,
+}                               bọc trong {}   
+
+object.key                      truy vấn data ở key cụ thể trong object
+
+object[key]                     truy vấn data trong object theo key linh động
+
+object.key = new Value          thay đổi giá trị trong object
+                                thêm data vào obejct
+
+object[key] = value             thay đổi giá trị trong object
+                                thêm data vào obejct               
+
+delete object.key               xoá data khỏi object                 
+
+===================================================================
+
+array
+var array = [value1, value2, ...]           
+                                array để chứa danh sách
+                                có ngoặc [] bọc ngoài
+                                bên trong là các giá trị ngắn cách bởi ,
+
+array[index]                    truy vấn data ở vị trí index trong array  
+                                index đếm từ 0
+
+array[index][index]             Truy vấn mảng trong mảng                                
+
+array[index] = value            ghi đè data
+
+array.length                    độ dài array
+                                độ dài array đếm tư 1
+                                index đếm từ 0
+                                => độ dài lệch 1 dv so với vị trí phần tử cuối
+
+array.length = value            Thêm phần tử link động cho array                                    
+
+array.length - 1                vị trí phần tử cuối          
+
+delete array[i]                 xóa phần tử vị trí i
+

@@ -1,0 +1,68 @@
+concat                  gộp array
+[...ar1, ...ar2]        '...' liệt kê các phần tử trong array
+
+filter(function(value, index){          value:  giá trị phần tử trong array
+    // logic                            index:  vị trí của phần tử đang xét
+})                                      filter  tạo ra array mới sau khi lọc data array gốc    
+                                        nếu return true thì giữ lại
+                                        nếu return false thì loại bỏ
+
+map(function(value, index){             value:  giá trị phần tử trong array
+    // logic                            index:  vị trí của phần tử đang xét
+})                                      map     trả ra array mới có các phần tử bên trong chính là kết quả trả về của function
+                                                array mới có độ dài == array gốc
+
+indexOf(value, start)                   trả về vị trí của value đầu tiên trong array   
+                                        start:  vị trí bắt đầu tìm kiếm
+                                        trả về -1 nếu không tìm thấy     
+
+lastIndexOf(value, stop)                trả về vị trí của value cuối cùng trong array   
+                                        stop:   vị trí dừng tìm kiếm
+                                        trả về -1 nếu không tìm thấy   
+
+includes(value)                         kiểm tra sự tồn tại của giá trị trong array
+                                        true nếu có
+                                        false nếu không có                                          
+
+findIndex(function(value, index){       value:  giá trị phần tử trong array
+    // logic                            index:  vị trí của phần tử đang xét
+})                                      trả về vị trí của phần tử đầu tiên thỏa mãn đk tìm kiếm    
+
+
+sort(function(after, before){           after:  số đứng sau
+                                        before: số đứng trước
+                                        sắp xếp vị trí phần tử trong array
+})                                      return -    thì after lên trước before
+                                        return +    giữ nguyên before trước after
+                                        return 0    giữ nguyên
+
+push(value1, ...)                       thêm phần tử vào cuối 
+                                        sửa trực tiếp array gốc    
+
+pop()                                   xóa 1 phần tử cuối cùng trong array
+                                        return phần tử bị xóa
+                                        sửa trực tiếp array gốc 
+
+unshift(value1, ...)                    thêm phần tử vào đầu array  
+                                        sửa trực tiếp array gốc 
+
+shift()                                 xóa 1 phần tử đầu tiên trong array
+                                        return phần tử bị xóa
+                                        sửa trực tiếp array gốc      
+
+splice(start, deleteCount, ...newData)  start:          điểm bắt đầu làm việc
+                                        deleteCount:    số lượng bị xóa từ start
+                                        newData:        các phần tử chèn vào start                                                                                                     
+                                        return          array chứa phần tử bị xóa
+                                        sửa trực tiếp array gốc 
+
+reverse()                               đảo ngược vị trí phần tử trong array
+
+join('ký tự')                           tạo ra string mới từ array gốc
+                                        chèn 'ký tự' vào giữa từng phần tử
+
+find(function(value, index){            value:  giá trị phần tử trong array
+    // logic                            index:  vị trí của phần tử đang xét
+})                                      trả về giá trị đầu tiên thỏa mãn điều kiện
+                                        return true  thì trả về giá trị thảo mãn đk
+                                        return false thif kiểm tra data tiếp theo

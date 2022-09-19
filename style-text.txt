@@ -1,0 +1,87 @@
+Các cách thêm style
+
+C1 
+  dùng attribute style
+  
+  style='key: value ; key2 : value2'
+
+  code đọc từ trên xuống, trái qua phải
+  => nội dung sau sẽ ghi đè nội dung trước
+
+  thêm style trực tiếp và thẻ HTML
+
+C2 internal style: thêm style nội bộ
+  dùng thẻ style để thêm thuộc tính
+
+  cú pháp
+  <style>
+    the {                     áp dụng style cho tất cả các thẻ cùng tên trên giao diện
+      key: value ; 
+      key2 : value2
+    }
+
+    .class{                   áp dụng style cho tất cả thẻ cùng tên class
+      ....
+    }
+
+    #id{                      áp dụng style cho thẻ có id khớp với điều kiện
+      ....                    không được phép trùng tên id trên giao diện HTML
+    }
+  </style>  
+
+  trỏ càng cụ thể thì ưu tiên càng cao
+ !important > inline style > #id > .class > thẻ > * > kế thừa
+
+C3: thêm style bằng file css : external style 
+
+tạo file .css
+<link rel="stylesheet" href="./index.css">
+
+cú pháp giống internal style
+
+==============================================================
+
+background                    đổi màu nền
+color                         đổi màu chữ
+
+font-size                     điều chỉnh cỡ chữ
+                              đơn vị px, ...
+
+font-weight                   điều chỉnh chữ đậm, chữ nhạt
+
+font-style                    italic: nghiêng
+                              normal: bình thường
+
+text-decoration         
+            overline: gạch trên
+            line-through: gạch giữa
+            under-line: gạch dưới      
+
+border : độ dày / nét vẽ / màu
+border: 1px solid black                        
+
+border-collapse: collapse     gộp border của table thành 1
+
+text-align                    căn lề chữ
+                              lưu ý cần có khoảng trống thừa để căn chỉnh
+            left/right// :        trái / phải 
+            justfy                căn lề 2 bên
+            center                giữa
+
+text-transform                chuyển đổi chữ hoa, chữ thường            
+            uppercase         tất cả viết hoa
+            lowercase         tất cả viết thường
+            capitalize        viết hoa chữ đầu
+
+font-family:                  thay đổi font chữ   
+
+white-space:  
+	    nowrap	      Văn bản sẽ hiển thị trên cùng một hàng, chỉ xuống hàng khi gặp thẻ br
+
+ text-overflow:
+	     ellipsis 	      Cắt một đoạn text và thay thế bằng dấu 3 chấm.
+
+@font-face {
+  font-family: ten;           đặt tên cho font chữ mới
+  src: url(link);             liên kết đến file font chữ
+}

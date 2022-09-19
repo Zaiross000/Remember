@@ -1,0 +1,64 @@
+git init				khởi tạo dự án
+			
+git remote add origin link		tạo liên kết giữa git local và git online
+					
+2 lệnh trên chỉ dùng 1 lần khi khởi tạo dự án
+
+===========================================================
+
+git add .			lưu trữ tạm thời thay đổi trong dự án
+
+git commit -m 'note'		lưu trữ thay đổi đã được git add vào lịch sử	
+
+
+git push origin nhánh		đồng bộ lịch sử từ local lên online
+				ở nhánh nào thì push nhánh đó
+
+
+git pull origin nhánh		kéo code từ nhánh khác về
+		
+==============================================================
+
+git clone link			tải toàn bộ code của dự án trên git online về
+
+git log				xem lịch sử commit
+
+git checkout địaChỉ		đưa dự án đến địa chỉ yêu cầu
+
+git hoạt động dựa trên lịch sử
+	=> lịch sử phải khớp thì mới push được
+	=> chạy git pull để đồng nhất lịch sử
+
+================================================================
+
+conflict			xảy ra khi code chùng file
+
+	accept current change	lưu code của mình
+	accept incomming	bỏ code của mình
+	accept both		lưu cả 2
+
+=================================================================
+
+phân nhánh
+
+git fetch			cập nhật thông tin trên git online
+
+git branch -a			hiển thị tất cả các nhánh
+
+git checkout -b tên		tạo nhánh mới với tên chỉ định
+
+git checkout tên		chuyển nhánh chỉ định
+
+===================================================================
+
+thực thế mỗi người 1 nhánh
+
+k push lệch nhánh
+
+khi làm xong thì luôn pull code master về để xư lý lỗi
+
+xử lý xong lỗi thì tạo pull request
+
+=> 	trong quá trình làm việc k bị conflict
+	chỉ bị conflict khi pull master về
+

@@ -1,0 +1,91 @@
+content                   nội dung bên trong 1 thẻ
+
+border                    đường viền bao ngoài thẻ
+
+padding                   khoảng trống giữa content và border
+                          padding thuộc quyền sở hữu của thẻ
+
+margin                    khoảng trống dùng chung từ border ra ngoài
+                          margin không thuộc sở hữu của thẻ nào
+
+border: độ dày / net vẽ / màu sắc
+                          thêm border 4 mặt chung setting
+
+border-top                thêm border trển đỉnh
+border-bottom             thêm border dưới đáy
+border-left               thêm border bên trái
+border-right              thêm border bên phải
+
+border-radius             bo tròn đường viền
+
+==================================================
+
+padding: 10px             set padding chung 4 mặt
+
+padding: 10px 20px        set padding trên dưới / trái phải
+
+padding: 10 20 30 40      set padding theo chiều kim đồng hồ bắt đầu từ top
+
+==================================================
+
+margin: 10px              margin 4 mặt bằng nhau
+
+margin: 10 20             set margin trên dưới / trái phải
+
+margin: 10 20 30 40       set margin theo chiều kim đồng hồ bắt đầu từ top
+
+margin: auto              tự động chia đều margin
+                          dùng khi có margin thừa
+
+width                     điều chỉnh chiều rộng
+                          nếu dùng đơn vị % thì sẽ tỷ lệ với kích thước của thẻ cha gần nhấn
+
+height                    điều chỉnh chiều cao
+
+box-sizing: border-box    width, height sẽ gồm cả border, padding, content
+
+====================================================
+display                   điều chỉnh hiển thị
+
+display: block            hiển thị dạng khối
+                          chiếm chỗ nguyên cả ròng
+                          khoảng thừa được thế bằng margin
+
+display: inline           hiển thị dạng text
+                          chiến chỗ đúng bằn nội dung bên trong
+                          không dùng đc width, height   
+
+display: inline-block     giống inline nhưng dùng được width, height
+                          không chiến cả ròng nữa    
+
+display: none             hủy hiển thị
+                          mất hoàn toàn khỏi giao diện
+
+display: flex                                         
+    flex-direction: row/column
+    justify-conten:start/center/end     điều chỉnh hàng ngang
+    align-item:start/center/end         điều chỉnh hàng dọc
+    flex-wrap:wrap
+
+visible:hidden            tàng hình 
+                          vẫn hiển thị trên giao diện
+
+============================================================
+
+opacity:                  làm mờ, nhìn xuyên thấu
+
+filter:                   đổi hiệu ứng cho img
+
+cursor:                   đổi con trỏ
+
+hover:                    style chỉ áp dụng khi đưa con trỏ vào
+the:hover{...}
+.class:hover{...}
+#id:hover{...}
+
+box-shadow: x y blur scale color ;      x: trục x
+                                        y: trục y
+                                        blur: độ mờ
+                                        scale: kéo
+                                        color: màu
+                                        

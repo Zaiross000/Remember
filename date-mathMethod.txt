@@ -1,0 +1,60 @@
+new Date()              thời điểm hiện tại
+
+new Date(string)        tạo date theo string yêu cầu
+                        định dạng nam / thang / ngay 
+                        phải đúng định dạng
+
+new Date(year, month, date, hour, minute, sec)
+                        tạo date theo yêu cầu
+                        tháng đếm từ 0
+                        có thể cộng dồn
+
+new Date(milisec)       tạo date bằng cánh công milisec vào 1/1/1970                        
+
+=========================================================================
+get                     lấy thông tin về date
+
+getDate()               lấy ngày
+
+getDay()                lấy thứ trong tuần
+                        đếm từ 0
+                        
+getMonth()              lấy tháng
+                        tháng đếm từ 0
+
+getFullYear             lấy năm                        
+
+==========================================================================
+
+setDate(date)           sửa ngày
+                        có cộng dồn
+
+setMonth(month, date)   sửa tháng, sửa ngày
+                        có cộng dồn
+
+setFullYear(year, month, date)
+                        sửa cả năm, tháng, ngày  
+
+===========================================================================
+
+toString()
+toLocaleString()
+
+===========================================================================
+
+Math.abs(number)        lấy giá trị tuyệt đối
+
+Math.pow(a, b)          a ** b
+
+Math.round(number)      làm tròn số tự nhiên
+
+Math.ceil(number)       làm tròn lên
+
+Math.floor(number)      làm tròn xuống
+
+toFixed(x)              làm tròn đến số thập phân thứ x
+
+Math.max()              trả về số lớn nhất
+Math.min()              trả về số bé nhất
+
+Math.random()           trả về số ngẫu nhiên từ 0 - 1

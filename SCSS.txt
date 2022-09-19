@@ -1,0 +1,23 @@
+Variable - Biến
+
+$tên-biến : giá-trị;
+
+=========================================================
+
+Nested Code - Đoạn code lồng nhau
+
+ví dụ
+.header {
+    color: #fff;
+    &-inner{
+        background: #000;
+    }
+}
+
+=========================================================
+
+
+Mixin
+
+cách tạo: @mixin Tên-mixin($tên-biến: giá-trị-mặc-định(nếu không truyền tham số)) {};
+cách dùng: @include Tên-mixin();
