@@ -1,0 +1,22 @@
+// CREATE NEW PROJECT                               tạo project mới
+git inint
+git remove
+git add .
+git commit -m "message"
+git push origin master
+
+
+// UPDATE CODE
+git add .
+git commit -m "message"
+git push origin master
+
+// DOWNLOAD CODE FROM GITHUB                        kéo code từ github về
+
+git clone url                                       url la link từ github
+
+// CREATE NEW BRANCH                                tạo 1 nhánh mới 
+
+git checkout -b user
+git fetch
+git push origin user
